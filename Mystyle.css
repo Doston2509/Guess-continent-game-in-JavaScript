@@ -1,0 +1,64 @@
+
+body{
+    background-color:pink;
+    background-image: url("tree.png");
+    background-position:left top;
+    
+}
+table{
+    margin:auto;
+}
+#first{
+    background-color:aqua;
+    border:dashed;
+    margin:px;
+    padding: 15px;
+}
+#second{
+    background-color:red;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#third{
+    background-color:orange;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#fourth{
+    background-color:powderblue;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#fifth{
+    background-color:palegreen;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#sixth{
+    background-color:aqua;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#seventh{
+    background-color:aqua;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#eighth{
+    background-color:aqua;
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}
+#ninth{
+    background-color:aqua; 
+    border:dashed;
+    margin:20px;
+    padding: 15px;
+}

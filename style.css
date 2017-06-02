@@ -1,0 +1,60 @@
+
+h1{
+    text-align: center;
+    color: darkblue;
+
+}
+body{
+    background-color: aqua;
+    font-family: Helvetica;
+    margin: 0;
+
+}
+h2, h3{
+    text-align: center;
+    color: darkblue;
+
+}
+div.container{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  margin-left: 19%;
+  margin-right: 19%;
+  width: auto;
+  height: auto;
+  border: double 1px black;
+  padding: 1%;
+}
+#first, #third{
+  width:47%;
+  height:100%;
+  margin-left:auto;
+  margin-right: auto;
+  padding: 2px;
+  border: dashed 1px black;
+}
+
+#second{
+  width:6%;
+  height:100%;
+  margin-left:auto;
+  margin-right: auto;
+  border: none;
+}
+button{
+  width:60%;
+  margin: 1%;
+  text-align: center;
+  background-color: lightgrey;
+}
+#myForm{
+    margin-left: 40%;
+    margin-right: 0%;
+}
+#options{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: cursive;
+}
