@@ -24,7 +24,7 @@ function initializeSecond() {
 }
 function questions(){
 
-    var countries1 = [
+    var countries = [
       "China", "Uzbekistan", "South Korea", "Uzbekistan", "Uzbekistan",
       "Bangladesh", "Iran", "Nepal", "Pakistan", "Turkey",
       "Uzbekistan", "Russian Federation", "United Arab Emirates", "Vietnam", "Singapore",
@@ -43,12 +43,12 @@ function questions(){
       "Albania", "Bulgaria", "Czech Republic", "Finland", "Hungary",
       "Luxembourg", "Moldova", "Norway"
     ];
-    // var countries = [
-    //   "Uzbekistan", "Chine", "Nepal",
-    //   "Egypt", "Congo", "Algeria",
-    //   "Brazil", "Chili", "Urugvay",
-    //   "USA", "Canada", "Mexico",
-    //   "Germany", "Italy", "UK"];
+
+    var i;
+    for(i=1; i<countries.length; i++){
+      
+      document.getElementById("country").innerHTML = i + " " + countries[i];
+    }
     var rand = Random();
 
     document.getElementById('question').innerHTML = "Question N:" + numQuestion

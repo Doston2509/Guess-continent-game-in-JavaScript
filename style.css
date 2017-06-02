@@ -76,6 +76,28 @@ div.wrapper{
   height: 100%;
   border: dashed 1px black;
 }
+div.tutorialCont{
+  /*display: block;*/
+  /*justify-content: center;*/
+}
+.tutorialCont{
+  margin-left: 19%;
+  margin-right: 19%;
+  width: auto;
+  height:auto;
+  border: solid 1px black;
+  padding:1%;
+}
+table{
+  border: dashed 1px black;
+  width: 100%;
+  padding: 1%;
+}
+th, td{
+  border:solid 1px lightgrey;
+  width:50%;
+  padding-left: 2%;
+}
 #myForm{
     margin-left: 40%;
     margin-right: 0%;
