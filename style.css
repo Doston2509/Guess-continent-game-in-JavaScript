@@ -2,18 +2,15 @@
 h1{
     text-align: center;
     color: darkblue;
-
 }
 body{
     background-color: aqua;
     font-family: Helvetica;
     margin: 0;
-
 }
 h2, h3{
     text-align: center;
     color: darkblue;
-
 }
 div.container{
   display: flex;
@@ -48,6 +45,36 @@ button{
   margin: 1%;
   text-align: center;
   background-color: lightgrey;
+}
+div.detailCont{
+  display: block;
+  justify-content: center;
+}
+.detailCont{
+  margin-left: 19%;
+  margin-right: 19%;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  border: solid 1px black;
+}
+
+/* wrapper is continer in Details.html */
+div.wrapper{
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  margin-left: 19%;
+  margin-right: 19%;
+  width: auto;
+  height: auto;
+  border: solid 1px black;
+}
+#firstDtl, #secondDtl, #thirdDtl{
+  width:33%;
+  height: 100%;
+  border: dashed 1px black;
 }
 #myForm{
     margin-left: 40%;
