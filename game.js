@@ -23,50 +23,69 @@ function initializeSecond() {
     questions();
 }
 function questions(){
-
+  // initialize image box as empty
+    var diving = document.getElementById("foo");
+    diving.innerHTML = "";
+    
     var countries = [
-      "China", "Uzbekistan", "South Korea", "Uzbekistan", "Uzbekistan",
-      "Bangladesh", "Iran", "Nepal", "Pakistan", "Turkey",
-      "Uzbekistan", "Russian Federation", "United Arab Emirates", "Vietnam", "Singapore",
+      "China", "Uzbekistan", "South Korea", "Uzbekistan", // 6 asia
+      "Nepal", "Russian Federation",
 
-      "Namibia", "Ghana", "Egypht", "Congo", "Algeria",
-      "Angola", "Cameroon", "Gambia", "Kenya", "Libya",
-      "Liberia", "Ethiopia", "Nigeria", "Niger", "Somalia",
+      "Egypht", "Congo", "Algeria",
+      "Cameroon", // 4 africa
 
-      "Brazil", "Chili", "Argentina", "Peru", "Ecuador",
-      "Bolivia", "Guyana", "Paraguay", "Uruguay", "Venezuela",
+      "Brazil", "Chili", "Argentina",//3 south america
 
-      "Honduras", "Dominica", "USA", "Cuba", "Mexico",
-      "Canada", "Panama",
+      "USA", "Mexico", "Canada", // 3 north america
 
-      "Malta", "Liechtenstein", "Iceland", "Georgia", "Cyrpus",
-      "Albania", "Bulgaria", "Czech Republic", "Finland", "Hungary",
-      "Luxembourg", "Moldova", "Norway"
+      "Bulgaria", "France", "Germany", "Italy", // 4 european countries
+    ];
+    var flags = [
+      "Icons/china.png", "Icons/uzbekistan.ico", "Icons/southKorea.ico", "Icons/uzbekistan.ico",
+      "Icons/nepal.jpg", "Icons/russia.ico",
+
+       "Icons/egypt.ico", "Icons/congo.png", "Icons/algeria.ico", "Icons/cameroon.ico",
+
+       "Icons/brazil.ico", "Icons/chili.ico", "Icons/argentina.ico",
+
+       "Icons/usa.ico", "Icons/mexico.jpg", "Icons/canada.png",
+
+       "Icons/bulgaria.ico", "Icons/france.png", "Icons/germany.png", "Icons/italy.png"
+
+      //here I need to add more flags
     ];
 
     var i;
     for(i=1; i<countries.length; i++){
-      
+
       document.getElementById("country").innerHTML = i + " " + countries[i];
     }
     var rand = Random();
 
     document.getElementById('question').innerHTML = "Question N:" + numQuestion
-    + " In which continent is " + countries1[rand] + " located?";
-    if (rand < 15) {
+    + " In which continent is " + countries[rand] + " located?";
+    if (rand < 6) {
       choice = 1;
-    } else if (rand > 14 && rand < 30) {
+    } else if (rand > 5 && rand < 10) {
       choice = 2;
-    } else if (rand > 29 && rand < 40) {
+    } else if (rand > 9 && rand < 13) {
       choice = 3;
-    } else if (rand > 39 && rand < 47) {
+    } else if (rand > 12 && rand < 16) {
       choice = 4;
     } else {
       choice = 5;
     }
+
+    // Image
+    var img = new Image();
+    // var diving = document.getElementById("foo");
+    img.onload = function(){
+      diving.appendChild(img);
+    }
+    img.src = flags[rand];
 }
 function Random(){
-  return Math.floor(Math.random()*59);
+  return Math.floor(Math.random()*19);
 }
 function check(selected){
 
