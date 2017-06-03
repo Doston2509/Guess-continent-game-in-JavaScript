@@ -11,12 +11,24 @@
 
 
     <br/>
-    <h2>Please, enter the name of players.</h2><br/>
-    <div id="myForm">
+    <h2>Please, enter the name of players.</h2>
+    <form action="action.php" class="forming">
+      <fieldset>
+        <legend align="center">Guess continent game</legend>
         <input type="text" name="namePlayer" id="namePlayer" placeholder="Type here">
         <input type="button" onclick="validate()" value="Enter"/>
-    </div><br/>
-    <p id="message"></p>
+      </fieldset>
+    </form>
+
+<!-- ======================== here I added the way you can check my details 25091995 is password =============-->
+    <br><br><br>
+    <br/>
+    <div class="detailCont" align="center">
+      <h3>Here you can check who is the developer of this cool application!</h3>
+      <input type="text" id="detail" placeholder="Type here">
+      <input type="button" onclick="moveDetails()" value="Check out">
+      <h3 id="message"></h3>
+    </div>
 
 
 

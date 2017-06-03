@@ -6,7 +6,7 @@ function validate() {
     var nameP = document.getElementById('namePlayer');
 
     if (nameP.value == "") {
-        alert("The name of player is null");
+        alert("The name of player is empty");
     } else {
       name = nameP.value;
         Redirect();
@@ -26,7 +26,7 @@ function questions(){
   // initialize image box as empty
     var diving = document.getElementById("foo");
     diving.innerHTML = "";
-    
+
     var countries = [
       "China", "Uzbekistan", "South Korea", "Uzbekistan", // 6 asia
       "Nepal", "Russian Federation",
